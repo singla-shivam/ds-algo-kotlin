@@ -31,15 +31,6 @@ abstract class Heap<T : Comparable<T>> : Collection<T> {
     }
   }
 
-  private fun find(item: T): IntArray {
-    val indices = ArrayList<Int>()
-    for ((i, element) in elements.withIndex()) {
-      if (element == item) indices.add(i)
-    }
-
-    return indices.toIntArray()
-  }
-
   private fun heapifyDown(index: Int = 0) {
     var currentIndex = index
 
@@ -60,6 +51,8 @@ abstract class Heap<T : Comparable<T>> : Collection<T> {
   }
 
   private fun heapifyUp(index: Int = size - 1) {
+    if (index >= size) return
+
     var currentIndex = index
 
     while (
@@ -72,13 +65,30 @@ abstract class Heap<T : Comparable<T>> : Collection<T> {
     }
   }
 
+  fun findAll(item: T): IntArray {
+    val indices = ArrayList<Int>()
+    for ((i, element) in elements.withIndex()) {
+      if (element == item) indices.add(i)
+    }
+
+    return indices.toIntArray()
+  }
+
+  fun find(item: T): Int {
+    for ((i, element) in elements.withIndex()) {
+      if (element == item) return i
+    }
+    return -1
+  }
+
   fun peek() = elements.elementAtOrNull(0)
 
   fun poll(): T? {
     if (isEmpty()) return null
 
     val item = elements.first()
-    elements[0] = removeLast()
+    val lastElement = removeLast()
+    if (size > 0) elements[0] = lastElement
     heapifyDown()
 
     return item
@@ -91,22 +101,21 @@ abstract class Heap<T : Comparable<T>> : Collection<T> {
   }
 
   fun remove(element: T): Heap<T> {
-    val indices = find(element).reversedArray()
+    var index = find(element)
 
-    for (index in indices) {
+    while (index != -1) {
       val lastElement = removeLast()
-      if (index == size - 1) continue
-
-      elements[index] = lastElement
+      if (index < size) elements[index] = lastElement
       heapifyUp(index)
       heapifyDown(index)
+      index = find(element)
     }
 
     return this
   }
 
   override fun contains(element: T): Boolean {
-    return find(element).isNotEmpty()
+    return find(element) != -1
   }
 
   override fun isEmpty(): Boolean = elements.size == 0
@@ -120,8 +129,15 @@ abstract class Heap<T : Comparable<T>> : Collection<T> {
   }
 
   override fun toString(): String {
-    return elements.joinToString(" ")
+    return elements.joinToString(",")
   }
 
   abstract fun isInCorrectOrder(first: T, second: T): Boolean
+
+  companion object {
+    fun<H: Heap<T>, T: Comparable<T>> fromArray(array: Array<T>, heap: H): Heap<T> {
+      array.forEach { e -> heap.add(e) }
+      return heap
+    }
+  }
 }

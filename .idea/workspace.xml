@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c5c651a-cf6b-45dd-b5f2-c758b37646fa" name="Default Changelist" comment="" />
+    <list default="true" id="4c5c651a-cf6b-45dd-b5f2-c758b37646fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/test/utilites.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/ds-algo-kotlin.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ds-algo-kotlin.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ds/heap/Heap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ds/heap/Heap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ds/heap/abc.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ds/heap/MinHeapTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ds/heap/MinHeapTest.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,13 +28,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="0o6nsduh" />
   </component>
   <component name="ProjectId" id="1mCiUFoje7Ft3HbCcJI5J3fvpaD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,6 +47,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
@@ -103,15 +118,29 @@
       <updated>1609003987516</updated>
       <workItem from="1609003989535" duration="1404000" />
       <workItem from="1609005525862" duration="183000" />
-      <workItem from="1609005800492" duration="1605000" />
+      <workItem from="1609005800492" duration="7726000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ds_algo_kotlin$MinHeapTest.ic" NAME="MinHeapTest Coverage Results" MODIFIED="1609013829250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
