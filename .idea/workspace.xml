@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c5c651a-cf6b-45dd-b5f2-c758b37646fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/algo/isPrime.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/algo/PrimalityTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/algo/math/chineseRemainder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/algo/math/extendedEuclidean.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/algo/math/gcd.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/algo/math/mulInv.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/algo/math/sumDigits.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/algo/math/ChineseRemainder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/algo/math/ExtendedEuclidean.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/algo/math/Gcd.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/algo/math/MulInv.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/algo/math/SumDigits.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ds/DSU.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ds/DSU.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ds/DSUTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ds/DSUTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/algo/isPrime.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/algo/math/isPrime.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/algo/PrimalityTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/algo/math/PrimalityTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +81,11 @@
       <recent name="$PROJECT_DIR$/src/test/kotlin" />
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="algo.math" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.PrimalityTest">
+  <component name="RunManager" selected="Gradle.Tests in 'ds-algo-kotlin.test'">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -87,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DSUTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ChineseRemainder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ds.DSUTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;algo.math.ChineseRemainder&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -108,12 +118,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MaxHeapTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Gcd" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ds.heap.MaxHeapTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;algo.math.Gcd&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -129,12 +139,12 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MinHeapTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SumDigits" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ds.heap.MinHeapTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;algo.math.SumDigits&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -150,12 +160,33 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PrimalityTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'algo'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;algo.PrimalityTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;algo.*&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'ds-algo-kotlin.test'" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -234,12 +265,22 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Gradle.Tests in 'ds-algo-kotlin.test'" />
+      <item itemvalue="Gradle.ds-algo-kotlin [ktlintCheck]" />
+      <item itemvalue="Gradle.ds-algo-kotlin [ktlintFormat]" />
+      <item itemvalue="Gradle.Tests in 'ds'" />
+      <item itemvalue="Gradle.ChineseRemainder" />
+      <item itemvalue="Gradle.Gcd" />
+      <item itemvalue="Gradle.SumDigits" />
+      <item itemvalue="Gradle.Tests in 'algo'" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PrimalityTest" />
-        <item itemvalue="Gradle.DSUTest" />
-        <item itemvalue="Gradle.MaxHeapTest" />
-        <item itemvalue="Gradle.MinHeapTest" />
+        <item itemvalue="Gradle.Tests in 'algo'" />
+        <item itemvalue="Gradle.SumDigits" />
+        <item itemvalue="Gradle.ChineseRemainder" />
+        <item itemvalue="Gradle.Gcd" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +300,7 @@
       <workItem from="1609005800492" duration="8076000" />
       <workItem from="1609057828180" duration="12000" />
       <workItem from="1609058984507" duration="12000" />
-      <workItem from="1609059003013" duration="6131000" />
+      <workItem from="1609059003013" duration="20816000" />
     </task>
     <servers />
   </component>
@@ -285,8 +326,11 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ds_algo_kotlin$MaxHeapTest.ic" NAME="MaxHeapTest Coverage Results" MODIFIED="1609060304495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ds_algo_kotlin$Tests_in__ds_.ic" NAME="Tests in 'ds' Coverage Results" MODIFIED="1609064122743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/ds_algo_kotlin$PrimalityTest.ic" NAME="PrimalityTest Coverage Results" MODIFIED="1609065057824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ds_algo_kotlin$PrimalityTest.ic" NAME="PrimalityTest Coverage Results" MODIFIED="1609065450145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ds_algo_kotlin$ChineseRemainder.ic" NAME="ChineseRemainder Coverage Results" MODIFIED="1609098797001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ds_algo_kotlin$Tests_in__algo_.ic" NAME="Tests in 'algo' Coverage Results" MODIFIED="1609098827740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ds_algo_kotlin$DSUTest.ic" NAME="DSUTest Coverage Results" MODIFIED="1609063990312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ds_algo_kotlin$MinHeapTest.ic" NAME="MinHeapTest Coverage Results" MODIFIED="1609014022083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ds_algo_kotlin$SumDigits.ic" NAME="SumDigits Coverage Results" MODIFIED="1609099011775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

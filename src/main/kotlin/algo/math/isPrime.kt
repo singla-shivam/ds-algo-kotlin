@@ -1,4 +1,4 @@
-package algo
+package algo.math
 
 fun isPrime(num: Int): Boolean {
   if (num <= 3) return num > 1

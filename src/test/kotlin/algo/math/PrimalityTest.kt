@@ -1,4 +1,4 @@
-package algo
+package algo.math
 
 import org.junit.jupiter.api.Test
 import kotlin.test.assertFalse
