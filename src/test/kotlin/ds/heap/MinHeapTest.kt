@@ -4,14 +4,6 @@ import org.junit.jupiter.api.Test
 import test.assertIntArray
 import kotlin.test.*
 
-data class Person(val age: Int) : Comparable<Person> {
-  override fun compareTo(other: Person): Int {
-    if (age < other.age) return -1
-    if (age > other.age) return 1
-    return 0
-  }
-}
-
 class MinHeapTest {
   @Test
   fun `Should create min-heap of zero size`() {
@@ -210,7 +202,7 @@ class MinHeapTest {
 
   @Test
   fun `Should remove items from heap with heapify down`() {
-    val minHeap = MinHeap<Int>();
+    val minHeap = MinHeap<Int>()
 
     minHeap.add(3).add(12).add(10).add(11).add(11)
 
@@ -255,10 +247,10 @@ class MinHeapTest {
 
     assertEquals("1,2,3,4,5,6,7,8,9", minHeap.toString())
 
-    minHeap.remove(2);
+    minHeap.remove(2)
     assertEquals("1,4,3,8,5,6,7,9", minHeap.toString())
 
-    minHeap.remove(4);
+    minHeap.remove(4)
     assertEquals("1,5,3,8,9,6,7", minHeap.toString())
   }
 

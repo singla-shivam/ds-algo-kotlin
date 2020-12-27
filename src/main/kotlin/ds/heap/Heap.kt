@@ -135,7 +135,7 @@ abstract class Heap<T : Comparable<T>> : Collection<T> {
   abstract fun isInCorrectOrder(first: T, second: T): Boolean
 
   companion object {
-    fun<H: Heap<T>, T: Comparable<T>> fromArray(array: Array<T>, heap: H): Heap<T> {
+    fun <H : Heap<T>, T : Comparable<T>> fromArray(array: Array<T>, heap: H): Heap<T> {
       array.forEach { e -> heap.add(e) }
       return heap
     }
