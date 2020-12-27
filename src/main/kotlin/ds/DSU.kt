@@ -50,5 +50,4 @@ class DSU(_size: Int = 0) {
     root1.parent = r2
     root2.rank += root1.rank
   }
-
 }

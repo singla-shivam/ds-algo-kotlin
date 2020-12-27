@@ -108,5 +108,4 @@ class DSUTest {
     assertEquals(dsu.leader(25), dsu.leader(13))
     assertEquals(dsu.leader(25), dsu.leader(24))
   }
-
 }
