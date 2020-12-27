@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c5c651a-cf6b-45dd-b5f2-c758b37646fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/ds/heap/MaxHeapTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ds-algo-kotlin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ds-algo-kotlin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ds-algo-kotlin.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ds-algo-kotlin.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/ds-algo-kotlin.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ds-algo-kotlin.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ds/DSU.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/ds/DSUTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ds/heap/Heap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ds/heap/Heap.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ds/heap/MinHeapTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ds/heap/MinHeapTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/test/utilites.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/test/utilites.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -80,7 +72,7 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'ds'">
+  <component name="RunManager" selected="Gradle.DSUTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -91,6 +83,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="DSUTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ds.DSUTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="MaxHeapTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -199,6 +212,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DSUTest" />
         <item itemvalue="Gradle.Tests in 'ds'" />
         <item itemvalue="Gradle.MaxHeapTest" />
         <item itemvalue="Gradle.MinHeapTest" />
@@ -221,7 +235,7 @@
       <workItem from="1609005800492" duration="8076000" />
       <workItem from="1609057828180" duration="12000" />
       <workItem from="1609058984507" duration="12000" />
-      <workItem from="1609059003013" duration="2262000" />
+      <workItem from="1609059003013" duration="4734000" />
     </task>
     <servers />
   </component>
@@ -246,6 +260,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ds_algo_kotlin$MaxHeapTest.ic" NAME="MaxHeapTest Coverage Results" MODIFIED="1609060304495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ds_algo_kotlin$Tests_in__ds_.ic" NAME="Tests in 'ds' Coverage Results" MODIFIED="1609061514885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ds_algo_kotlin$DSUTest.ic" NAME="DSUTest Coverage Results" MODIFIED="1609063734263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ds_algo_kotlin$MinHeapTest.ic" NAME="MinHeapTest Coverage Results" MODIFIED="1609014022083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
